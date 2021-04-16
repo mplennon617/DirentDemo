@@ -15,7 +15,7 @@ will need to install boost if you wish to use this library.
 Whichever library you choose, it's important that you understand how to include the library in your project, and
 you know where to find out how your library performs basic directory iterating. In all these libraries, you shouldn't need
 to include more than one header file (even if you're copying an entire directory into your project), so if you find yourself
-using #include many times, there's probably an easier way to get it to work.
+using #include many times, there's probably an easier way you are missing.
 
 Dirent, for example, only requires `#include <dirent.h>`.
 
