@@ -34,6 +34,7 @@ int main(int argc, char** argv) {
 
     // If the DIR object (directory iterator) successfully opened a directory, iterate through all files using readdir() in a while loop.
     if (dp != nullptr) {
+        // If readdir() executed successfully, perform an iteration of the while loop; otherwise, stop reading.
         while ((entry = readdir(dp))) {
             thisFilePath = dir + "/" + entry->d_name; // This will set 'thisFilePath' to the ABSOLUTE path of the FILE.
 
