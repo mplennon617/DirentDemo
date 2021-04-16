@@ -19,6 +19,8 @@ using #include many times, there's probably an easier way you are missing.
 
 Dirent, for example, only requires `#include <dirent.h>`.
 
+## File paths
+
 For the timing demo, we will be using the *Absolute Filepath* to locate the folder with your documents. This means
 that you will need to specify the location of this folder from the root directory of your drive
 (/C:/, etc. for Windows, / for Mac).
