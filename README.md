@@ -13,15 +13,15 @@ There are many libraries that allow you to read contents of files in a directory
 will need to install boost if you wish to use this library.
   
 Whichever library you choose, it's important that you understand how to include the library in your project, and
-you know where to find out how your library performs basic directory iterating. In all these library, you shouldn't need
+you know where to find out how your library performs basic directory iterating. In all these libraries, you shouldn't need
 to include more than one header file (even if you're copying an entire directory into your project), so if you find yourself
-using #include many times, there's probably an easier way.
+using #include many times, there's probably an easier way to get it to work.
 
 Dirent, for example, only requires `#include <dirent.h>`.
 
 For the timing demo, we will be using the *Absolute Filepath* to locate the folder with your documents. This means
 that you will need to specify the location of this folder from the root directory of your drive
-(C:/, etc. for Windows, /User for Mac).
+(C:/, etc. for Windows, / for Mac).
 
 If you're unsure how to get the absolute path of a file:
 
