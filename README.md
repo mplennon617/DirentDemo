@@ -5,16 +5,21 @@
 This is a demo project for SMU CS 2341 - Data Structures. The intent is to provide an example
 for using dirent.h to read and analyze contents for all files in a Directory.
 
-There are many ways to read contents of files in a directory in C++.
+There are many libraries that allow you to read contents of files in a directory in C++.
 
 - **dirent.h**....................................A C library (available alongside the C++ standard library).
 - **std::filesystem (C++17)**...........Available in C++17 as a new alternative to dirent.
 - **boost::filesystem**.....................Where std::filesystem used to live before C++17. You
 will need to install boost if you wish to use this library.
   
-Whichever approach you choose, it's important that you understand where
+Whichever library you choose, it's important that you understand how to include the library in your project, and
+you know where to find out how your library performs basic directory iterating. In all these library, you shouldn't need
+to include more than one header file (even if you're copying an entire directory into your project), so if you find yourself
+using #include many times, there's probably an easier way.
 
-For the timing demo, we will be using the Absolute Filepath to locate your documents. This means
+Dirent, for example, only requires `#include <dirent.h>`.
+
+For the timing demo, we will be using the *Absolute Filepath* to locate the folder with your documents. This means
 that you will need to specify the location of this folder from the root directory of your drive
 (C:/, etc. for Windows, /User for Mac).
 
