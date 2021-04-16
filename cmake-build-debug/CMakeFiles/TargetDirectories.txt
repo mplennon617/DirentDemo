@@ -1,0 +1,3 @@
+C:/Users/mplen/ta-code/DirentDemo/cmake-build-debug/CMakeFiles/DirentDemo.dir
+C:/Users/mplen/ta-code/DirentDemo/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/mplen/ta-code/DirentDemo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
