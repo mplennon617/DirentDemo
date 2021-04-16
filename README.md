@@ -5,6 +5,8 @@
 This is a demo project for SMU CS 2341 - Data Structures. The intent is to provide an example
 for using dirent.h to read and analyze contents for all files in a Directory.
 
+## Choosing your Library
+
 There are many libraries that allow you to read contents of files in a directory in C++.
 
 - **dirent.h**....................................A C library (available alongside the C++ standard library).
