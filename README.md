@@ -23,7 +23,7 @@ For the timing demo, we will be using the *Absolute Filepath* to locate the fold
 that you will need to specify the location of this folder from the root directory of your drive
 (/C:/, etc. for Windows, / for Mac).
 
-**Note: If you're using WSL but the directory you're looking for is on Windows (/C:), the absolute filepath starts with your mounted drive (/mnt/c/<path_to_directory>/)*.
+**Note: If you're using WSL but the directory you're looking for is on Windows (/C:), the absolute filepath starts with your mounted drive (/mnt/c/<path_to_directory>/).*
 
 If you're unsure how to get the absolute path of a file:
 
