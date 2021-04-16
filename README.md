@@ -21,7 +21,9 @@ Dirent, for example, only requires `#include <dirent.h>`.
 
 For the timing demo, we will be using the *Absolute Filepath* to locate the folder with your documents. This means
 that you will need to specify the location of this folder from the root directory of your drive
-(C:/, etc. for Windows, / for Mac).
+(/C:/, etc. for Windows, / for Mac).
+
+**Note: If you're using WSL but the directory you're looking for is on Windows (/C:), the absolute filepath starts with your mounted drive (/mnt/c/<path_to_directory>/)*.
 
 If you're unsure how to get the absolute path of a file:
 
@@ -29,6 +31,8 @@ If you're unsure how to get the absolute path of a file:
 2. Click 'Copy Path'.
 3. Click 'Absolute Path'.
 4. The path is saved to the clipboard; paste it where you like.
+
+Note that absolute filepaths MUST start with a '/'. This is different from relative filepaths, which don't begin with a '/'.
 
 ## Running the project
 
@@ -38,7 +42,7 @@ file in 'DirectoryToRead' will be printed out to the console.
 You will need to specify ONE command line argument to run this demo.
 
 - `argv[1]` - The ABSOLUTE PATH of the directory to be read. In your case, this argument
-will be `[C:]/<path_to_DirentDemo>/DirectoryToRead`.
+will be `/[C:]/<path_to_DirentDemo>/DirectoryToRead`.
   
 Hopefully, looking through this code will give you a better understanding of how to apply
 directory reading libraries such as Dirent to your final project. If you have any questions,
