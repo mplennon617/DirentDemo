@@ -41,8 +41,8 @@ int main(int argc, char** argv) {
             // Often times, directories read include '.' (current directory) and '..' (previous directory).
             // In our implementation, we're ignoring them.
             if (thisFilePath.find_last_of(".") == thisFilePath.size() - 1 || thisFilePath.find_last_of("..") == thisFilePath.size() - 1 ) continue;
-            // '.' - current directory. C:\Users\mplen\ta-code\DirentDemo\DirectoryToRead
-            // '..' - C:\Users\mplen\ta-code\DirentDemo
+            // '.' - current directory. [C:]/<path_to_DirentDemo>/DirectoryToRead
+            // '..' - [C:]/<path_to_DirentDemo>/
 
 
             // Open up the current file in the directory (absolute path) to read its contents.
